@@ -14,11 +14,13 @@ const List = () => {
 
   return (
     <div>
-      <h1>List will be here</h1>
-      {products.map((product) => (
-        // This is same as <Products image={product.image}, name {product.name} etc />
-        <Product key={product.id} {...product} />
-      ))}
+      <h1 className='text-center p-3'>Products List</h1>
+      <div className='d-flex flex-row flex-wrap'>
+        {products.map((product) => (
+          // This is same as <Products image={product.image}, name {product.name} etc />
+          <Product key={product.id} {...product} />
+        ))}
+      </div>
     </div>
   );
 };
