@@ -9,8 +9,8 @@ const List = () => {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    dispatch(fetchProducts());
-  }, [dispatch]);
+    if (products.length < 1) dispatch(fetchProducts());
+  }, [dispatch, products]);
 
   return (
     <div>
