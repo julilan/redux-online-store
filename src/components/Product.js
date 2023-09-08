@@ -13,7 +13,7 @@ const Product = (props) => {
             width: '16rem',
             height: '100%',
             padding: '1rem',
-            margin: '0 1rem',
+            margin: '1rem',
           }}
         >
           <Card.Img src={image} alt={title} />
