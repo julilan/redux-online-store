@@ -2,10 +2,10 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 
 const Product = (props) => {
-  const { image, title, description, price, category } = props;
+  const { image, title, description, price, category, rating } = props;
 
   return (
-    <section>
+    <section className='Detail'>
       <article className='Detail_thumbnail'>
         <Card
           bg='light'
@@ -22,8 +22,9 @@ const Product = (props) => {
             <Card.Subtitle className='mb-2 text-muted'>
               {category}
             </Card.Subtitle>
-            <Card.Text>{price}</Card.Text>
+            <Card.Text>{price} €</Card.Text>
             <Card.Text>{description}</Card.Text>
+            <Card.Text>Rating: {rating.rate}</Card.Text>
           </Card.Body>
         </Card>
       </article>
