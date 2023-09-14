@@ -14,8 +14,8 @@ const List = () => {
 
   return (
     <div>
-      <h1 className='text-center p-3'>Products List</h1>
-      <div className='d-flex flex-row flex-wrap'>
+      <h1 className='text-center p-3 mt-2'>Products</h1>
+      <div className='d-flex flex-wrap justify-content-center'>
         {products.map((product) => (
           // This is same as <Products image={product.image}, name {product.name} etc />
           <Product key={product.id} {...product} />
